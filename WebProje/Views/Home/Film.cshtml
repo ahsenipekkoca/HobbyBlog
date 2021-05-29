@@ -1,0 +1,93 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Film</title>
+    <link href="~/Content/ortak.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+    <style>
+        .ng-hide {
+            height: 0;
+            width: 0;
+            background-color: transparent;
+            top: -200px;
+            left: 200px;
+        }
+    </style>
+    <script>
+        var app = angular.module('myApp', ['ngAnimate']);
+    </script>
+</head>
+<body ng-app="myApp">
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">Açlık Oyunları</h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center">
+
+            <img src="~/Images/aclikoyunlari.jpg" /> <br />
+            <p style="color:black;font-weight:700;">
+                Yakın bir gelecekte Kuzey Amerika kuraklık ve arkasından gelen yangın ve kıtlıklarla zayıflayarak çökmüş; yerini bir başkent ve 12 eyaletten oluşan Panem adında bir ülkeye bırakmıştır.<br /> Bu yeni ülkede her sene eyaletlerden kura ile seçilen ikişer gencin katıldığı "Açlık Oyunları" düzenlenmektedir. <br />Kısmen eğlence amaçlı, kısmen de halka göz dağı vermeyi hedefleyen bu oyunlar, ayrıca tüm Panem ülkesinde televizyonlardan da izlenmektedir. <br />24 farklı 'yarışmacı' bütün televizyon seyircilerinin gözleri üzerindeyken, rakiplerini eleme ve hayatta kalma mücadelesi vermektedirler.<br />
+                Katniss'in 16 yaşımdaki kız kardeşi Primrose, maden yataklarıyla ünlü eyaletin 'kadın yarışmacısı' olarak seçildiğinde Katniss onun yerini almak için gönüllü olur. <br />Erkek katılımcı Peeta ile Katniss, kendilerinden yaş ve kuvvet açısından daha büyük, güçlü ve ömürleri boyunca bu an için eğitilmiş olan rakiplerine karşı ayakta durmaya çalışırlar...
+            </p>
+            <input type="checkbox" ng-model="myCheck">Gizle
+            <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/_G_FkciE2RA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">Açlık Oyunları 2 - Ateşi Yakalamak</h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center">
+
+            <img src="~/Images/a.o.2.jpg" /> <br />
+            <p style="color:black;font-weight:700;">
+                Katniss Everdeen'in distopik ve bir o kadar da despotik dünyada geçen hayatta kalma hikayesi, serinin ikinci filminde de devam ediyor.<br /> Katniss ve yoldaşı Peeta 74. Açlık Oyunları'nı kazandıktan sonra sorunsuz bir şekilde evlerine dönmeyi başarırlar.<br /> Ancak bu galibiyet her şeyden önce Zafer Tutu yapmalarını gerektirmektedir. Her bölgeyi ayrı ayrı ziyaret ettikleri bu yolculuk sırasında Katniss, büyük bir ayaklanmanın ilk işaretlerine şahit olur. <br />Başkaldırmanın ilk ipuçlarını gören Başkan Snow ise direnişi engelleyecek çareler aramaya başlar. Yeni Açlık Oyunları ile ilgili beklenmedik 'sürprizler' tasarlayan Snow 75. yılını kutlayacak Açlık Oyunları'nda, <br />25 yılda bir düzenlenen Çeyrek Asır Oyunları'nın (Quarter Quell) üçüncüsünün yapılacağını duyuracaktır.<br /> Galibiyetinin tadına dahi varamadan yeni bir hayatta kalma mücadelesine sürüklenen Katniss bu kez Açlık Oyunları'nın en yeteneklileri ve zekileri arasında hayatta kalmak için savaşacaktır.
+            </p>
+            <input type="checkbox" ng-model="myCheck">Gizle
+            <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/ul1j1vrXegw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">Açlık Oyunları 3 - Alaycı Kuş </h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center">
+
+            <img src="~/Images/ao3.jpg" /> <br />
+            <p style="color:black;font-weight:700;">
+                Katniss Everdeen, evi 12. Bölge'nin tamamen yıkıma uğradığını öğrendiğinde neler olup bittiğini görebilmek için oraya geri döner. <br />Karşılaştığı manzara ise tam anlamıyla dehşet vericidir. Kazananların kaldıkları evler dışında her şey harabeye dönmüş, <br />insanlar artık yeraltında yaşamaya başlamış ve hükümetin ölümcül politikasının karşısında hayatta kalmak için mücadele etmeye başlamışlardır. <br />Nükleer silahların dahi söz konusu olduğu bu atmosferde, Katniss gerçekten de protesto hareketinin yüzü olmaya başlar ve bu sorumluluğu bir türlü kabullenemez. <br />Yükselen bu isyan dalgasının içerisinde yer alamamasının nedenlerinden en önemlisi de Peeta'nın hayatının tehlikede olmasıdır.
+            </p>
+            <input type="checkbox" ng-model="myCheck">Gizle
+            <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/hv23a585GoE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">Harry Potter - Felsefe Taşı</h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center">
+
+            <img src="~/Images/felsefetasi.jpg" /><br />
+            <p style="color:black;font-weight:700;">
+                Harry Potter'ın ailesi ağır ve şaibeli bir trafik kazasında ölmüştür. Öksüz ve yetim kalan Harry'nin sığınabileceği tek yer, arasının pek de iyi olmadığı teyzesinin yanıdır.<br /> Harry, tüm hayatı boyunca idari ailesi tarafından kötü davranışlarla büyütülür. <br />Ancak Harry Potter artık 11 yaşındadır ve Harry'nin hayalleri ve yetenekleri günden güne su yüzüne çıkmaktadır. Kısa süre sonra Hogwarts büyücülük okuluna davet edilir. <br />Ancak tek amacı, ailesinin bu şüpheli kazasını araştırmak ve muhattaplarını cezalandırmaktır.
+            </p>
+            <input type="checkbox" ng-model="myCheck">Gizle
+            <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/GyupWYYllx0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">Harry Potter - Sırlar Odası</h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center">
+
+            <img src="~/Images/sirlarodasi.jpg" /> <br />
+            <p style="color:black;font-weight:700;">
+                Harry'nin yanlarında kalmak zorunda olduğu için yanlarında kaldığı ailesi olan Dursley'ler Harry'ye kötü davranmaya devam etmektedirler. <br />Harry de bu eziyetten kurtulmak için bir an önce çok sevdiği okulu Hogwarts'a dönmenin hayallerini kurmaktadır. <br />Vakit gelir ve Harry hazırlanmaya başlar ancak bir elf olan Dobby onu uyararak okula döndüğünde çok büyük bir felaketle karşılaşacağı yönünde uyarır. <br />Sırlar odası açılmıştır ve çok karanlık bir güç Hogwarts'ın üzerinde egemen olmaya başlamıştır.
+            </p>
+            <input type="checkbox" ng-model="myCheck">Gizle
+            <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/pi4VDfwKWq8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+    </div>
+</body>
+</html>

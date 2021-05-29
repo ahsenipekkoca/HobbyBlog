@@ -1,0 +1,81 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dizi</title>
+    <link href="~/Content/ortak.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+    <style>
+        .ng-hide {
+            height: 0;
+            width: 0;
+            background-color: transparent;
+            top: -200px;
+            left: 200px;
+        }
+    </style>
+    <script>
+        var app = angular.module('myApp', ['ngAnimate']);
+    </script>
+</head>
+<body ng-app="myApp">
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">Supernatural</h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center;font-weight:700;">
+
+            <img src="~/Images/supernatural.jpg" /><br />
+            <p>
+                Babalarının günlüğü üzerine bu yaratıklar ile nasıl savaşılacağını öğrenen kardeşler, avcılığı annesi ve sevdiği kadını böylesine öldürenin kim olduğunu öğrenip onu da öldürmek için istemesinin yanında diğer insanları kurtarmak da bir diğer amaçlarındandır.<br /> Böylelikle başlamış olan avcılık maceraları tüm dramatiği, tüm duygusallığı ve içe aktarılan tüm korku dolu korkusuzlukların eğlenceli ve akıcı bir şekilde ekranlarımıza gelmektedir. <br />İki kardeşin yanında oynamakta olan çok sayıda oyuncu bulunmaktadır. Fakat bunlardan bir tanesi vardır ki hem gerçek hayatta hem de dizi esnasında gönülleri fetih etmiş olan melek gibi bir diğer başarılı ve kaliteli bir oyuncu Castiel isimli oyuncudur.<br /><br />
+                Daha birçok farklı türde karaktere ve hali ile oyuncuya tanık olsak bile bu üçlü izleyenler tarafınca Supernatural dizisinin en gözde üçlüsü durumundadır. <br />Spoiler dolu bir dizi tanıtımı sayesinde diziye karşı bir merak sizi Türk dizilerinin klişelerinden kurtarmaya katkı sağlayacak, daha kaliteli ve doğa üstü durumlar ile adeta olayı yaşamanızı sağlayacaktır.
+            </p>
+                         <input type="checkbox" ng-model="myCheck">Gizle
+                         <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/t-775JyzDTk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">Sherlock</h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center;font-weight:700;">
+
+            <img src="~/Images/sherlock.jpg" /> <br />
+            <p>Sherlock Holmes, günümüzde yaşayan bir karakterdir. Olaylar genellikle 21. Yüzyılda geçmektedir.<br /> Günlük hayat içerisinde bir tesadüf ederi olarak Sherlock Holmes ile eskiden doktor ve asker olan John tanışırlar.<br />  Sherlock Holmes ile John, Sherlock’un Baker Sokağı’ndaki evinde birlikte yaşamaya ve ev arkadaşı olmaya başlarlar. Bu tanışmadan sonra, şehirde birtakım cinayetler olmaya başlar. <br /> Polis, bu cinayetlerin peşine düşer. Cinayeti işleyenleri bulmak için şehirde sıkı bir çalışma başlar. <br /> Polis, cinayeti işleyenlerin ortaya çıkması için sürdürülen araştırmalar esnasında Sherlock Holmes’ten yardım ister. Sherlock Holmes, polis teşkilatının kendisine yönelttiği bu yardım talebini geri çevirmez. <br /> Sherlock Holmes, çok ilginç özelliklere sahiptir. Onun kıvrak zekası, olaylar ve kişiler üzerindeki ayrıntıları normalden çok fazla daha kısa bir süre içerisinde fark edip anlayabilmesini sağlamaktadır. <br /> Sherlock Holmes’in muhteşem çalışan beyni ve ev arkadaşı John’un yardımlarıyla birlikte, şehirdeki cinayetlerin sırları bir bir ortaya çıkmaya başlar. <br /> Cinayetlerdeki detayların Sherlock tarafından kısa bir sürede çözümlenmesi ve katillerin hızlı bir şekilde bulunması sahnelerin etkileyiciliğini de arttırıyor.</p>
+
+            <input type="checkbox" ng-model="myCheck">Gizle
+            <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/xK7S9mrFWL4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+            
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">The Gifted</h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center;font-weight:700;">
+            <img src="~/Images/gifted.jpeg" /><br />
+            <p>Dizi, hükümetin mutant karşıtı yasaları nedeniyle mutantların saklanarak yaşamak zorunda olduğu bir evrende geçiyor.<br /> Hepimizin aşina olduğu X-Men evreni kısacası… Dizinin merkezinde ise Strucker ailesi bulunuyor. Sonu olaylı biten bir parti sonrasında ailenin iki çocuğunun da birer mutant olduğu ortaya çıkar. <br /> İşin ilginç tarafı ise ailenin babası Reed Strucker’ın mutant karşıtı çalışan bir hükümet ajanı olması. Fakat aile her zaman önce gelir! <br /> Çocuklarının güvenliğini düşünen Reed Strucker, çocuklarını ülkeden kaçırmak için yeraltında yaşayan diğer mutantlarla anlaşır ve mücadele başlar.</p>
+            <input type="checkbox" ng-model="myCheck">Gizle
+            <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/TSvX-azZmG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:30px;">
+            <h1 style="text-align:center;color:black;font-weight:bolder;font-family:'Segoe UI'">Arrow</h1>
+        </div>
+        <div class="row col-md-6 col-md-offset-3" style="margin-top:15px; text-align:center;font-weight:700;">
+
+            <img src="~/Images/arrow.jpeg" /><br />
+                                             <p>
+                                                 Şehrin çapkın ve milyarder playboyu Oliver Queen, babasıyla çıktığı bir gemi yolculuğu sırasında kaybolmuştur. <br/>Oliver’ın babası ve yaşadıkları Starling şehrinin haznedarlarından olan Robert Queen bulundukları geminin kaza yapması sonucu, kendisini feda ederek oğlunun hayatını kurtarmıştır. Her şeyden habersiz ailesi, Oliver Queen’in öldüğünü sanmaktadır. <br />Oliver ise kaza sonrası Pasifik Okyanusu’nda ıssız bir adaya düşmüş ve ada şartlarına uyum sağlamaya çalışmaktadır. <br />Bulunduğu ada ise kimsenin uğramadığı, en azılı katillerin atıldığı ıssız bir adadır.<br /><br />
+                                                 Oliver’ın ıssız adada geçirdiği 5 yılın ardından, adanın yakınından geçen Çinli balıkçıların kendisini bulmasıyla adadan kurtulur.<br /> Şehrine geri döndüğünde ise eski zengin ve yaramaz çocuk Oliver Quenn artık yerinde yoktur. Adanın acımasız koşulları ve her gün verdiği yaşam mücadelesi Oliver’ın karakterini şekillendirmiş ve onu bir savaş makinesine dönüştürmüştür.
+                                             </p>
+               <input type="checkbox" ng-model="myCheck">Gizle
+            <div ng-hide="myCheck"><iframe width="560" height="315" src="https://www.youtube.com/embed/ViFb0paKdgg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+    </div>
+</body>
+
+</html>
